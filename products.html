@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAWS Official</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/Logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    
+                </ul>
+            </div>
+            <i class="fa fa-bars"  onclick="showMenu()"></i>
+        </nav>
+        <h1>PRODUCTS</h1>
+	
+	</section>
+
+    <div class="video-container">
+        <video width="100" height="100" controls>
+            <source src="Video/KAWS x UNIQLO.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+	</style>
+
+</head>
+<body>
+	<table>
+		<thead>
+           
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="col-4">
+						<img src="Images/1.png" alt="Product 1">
+                        <h3>KAWS 'BFF' Tee</h3>
+                        <h5>Embrace the whimsical world of KAWS with this "BFF" unisex t-shirt. Made from soft, breathable fabric, this tee showcases the playful yet thought-provoking artwork of KAWS, featuring the beloved "BFF" character</h5>
+                        <p>$22.00</p>
+                    </div>
+                    <input type="number" value="1">
+                    <a class="btn2">Add to Cart</a>
+                </td>
+
+                <td>
+                    <div class="col-4">
+						<img src="Images/2.png" alt="Product 2">
+                        <h3>KAWS 'Companion' Tee</h3>
+                        <h5>Upgrade your street style with our classic white KAWS Companion graphic tee. Made from premium cotton, it showcases the iconic Companion print for a contemporary flair to your wardrobe.</h5>
+                        <p>$22.00</p>
+                    </div>
+                    <input type="number" value="1">
+                    <a class="btn2">Add to Cart</a>
+                </td>
+			 </tr>
+
+			<tr>
+                <td>
+                    <div class="col-4">
+						<img src="Images/3.png" alt="Product 3">
+                        <h3>KAWS 'XX' Logo Tee</h3>
+                        <h5>Elevate your streetwear with our KAWS 'XX' logo tee. Constructed from premium materials, it embodies KAWS's distinctive style while ensuring comfort and versatility. Crafted from soft cotton, it offers comfort with a touch of artistic flair.</h5>
+                        <p>$27.00</p>
+                    </div>
+                    <input type="number" value="1">
+                    <a class="btn2">Add to Cart</a>
+                </td>
+
+                <td>
+                    <div class="col-4">
+						<img src="Images/5.png" alt="Product 4">
+                        <h3> KAWS 'Seeing/Watching' Tee</h3>
+                        <h5>Express your love for contemporary art with our KAWS 'Seeing/Watching' graphic tee. Featuring the iconic artwork, it blends creativity with street style effortlessly. Crafted from soft cotton, it offers comfort with a touch of artistic flair.</h5>
+                        <p>$22.00</p>
+                    </div>
+                    <input type="number" value="1">
+                    <a class="btn2">Add to Cart</a>
+                </td>
+			 </tr>
+
+			 <tr>
+                <td>
+                    <div class="col-4">
+						<img src="Images/6.png" alt="Product 5">
+                        <h3>KAWS Companion Resting Place' Tee</h3>
+                        <h5>Dive into KAWS's world with our 'Companion Resting Place' tee. Featuring the iconic character in a contemplative pose, it's crafted for comfort and durability. Elevate your wardrobe with this standout piece</h5>
+                        <p>$27.00</p>
+                    </div>
+                    <input type="number" value="1">
+                    <a class="btn2">Add to Cart</a>
+                </td>
+
+			 </tr>
+
+		</tbody>
+	</table>
+
+    <div class="audio-container">
+        <audio controls>
+            <source src="Audio/KAWS Aud.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+
+    <!------ Footer ------>	
+	<section class="footer">
+		<h4>About Us</h4>
+		<p>Dedicated to delivering exceptional style experiences and creating unforgettable fashion statements for our clients. <br> Discover the exclusive KAWS T-shirt collection and redefine your wardrobe with wearable art.</p>
+	<div class="icons">
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-instagram"></i>
+	</div>
+	<p>KAWS &copy; 2024. All rights reserved.</p>
+
+	<script>
+		let cart = [];
+
+		function addToCart() {
+			const productName = 'Product Tshirt';
+			const price = 15.00;
+			const quantity = parseInt(document.getElementById('quantity').value);
+
+			const product = {
+				name: productName,
+				price: price,
+				quantity: quantity
+			};
+
+			cart.push(product);
+
+			console.log(`Added ${quantity} ${productName}(s) to cart`);
+			console.log('Cart:', cart);
+
+			// Clear the input field after adding to cart
+			document.getElementById('quantity').value = '';
+		}
+
+	</script>
+</body>
+</html>
